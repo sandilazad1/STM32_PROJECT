@@ -1,0 +1,21 @@
+/*
+ * rcc.c
+ *
+ *  Created on: 22 Aug 2022
+ *      Author: sandilazad
+ */
+
+#include "rcc.h"
+
+/**
+ * HSE Configuration Setup
+ */
+
+void rcc_HSE_config(void)
+	{
+	/*
+	 *  Configuration Parameter --> STM32F103 Clock Tree
+	*/
+
+
+	}

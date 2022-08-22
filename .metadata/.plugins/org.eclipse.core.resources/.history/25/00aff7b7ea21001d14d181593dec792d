@@ -1,0 +1,31 @@
+/*
+ * rcc.c
+ *
+ *  Created on: 22 Aug 2022
+ *      Author: sandilazad
+ */
+
+#include "rcc.h"
+
+/**
+ * HSE Configuration Setup
+ */
+
+void rcc_HSE_config(void)
+	{
+	/*
+	 *  Configuration Parameter --> STM32F103 Clock Tree
+	 *  HSE is = 8Mhz
+	 *  PLL_M  = 9
+	 *  UBS_Prescalar     = 1.5
+	 *  AHB_Prescalar     = 1
+	 *  Cortex_Prescalar  = 1
+	 *  --> 72 System Clock
+	 *
+	 *
+	 *  APB1Prescalar  = 2 -->  36,72Mhz
+	 *  APB2Prescalar  = 1 -->  72MHz Both
+	 *  ADC_Prescalar  = 6 -->  12Mhz
+	*/
+     RCC->CFGR & = ~(RCC_);
+	}
