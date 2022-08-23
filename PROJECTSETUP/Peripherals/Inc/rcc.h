@@ -17,7 +17,7 @@
 void rcc_HSE_config(void);
 
 /**
- * Systrick Configuration Setup
+ * SystrickConfiguration Setup
  */
 
 void sysTrick_config(void);

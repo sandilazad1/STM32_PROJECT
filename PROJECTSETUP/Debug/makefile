@@ -11,7 +11,6 @@ RM := rm -rf
 -include sources.mk
 -include Startup/subdir.mk
 -include Peripherals/Src/subdir.mk
--include Peripherals/Inc/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
 
@@ -35,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := PROJECT-SETUP
+BUILD_ARTIFACT_NAME := PROJECTSETUP
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-PROJECT-SETUP.elf \
+PROJECTSETUP.elf \
 
 MAP_FILES += \
-PROJECT-SETUP.map \
+PROJECTSETUP.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-PROJECT-SETUP.list \
+PROJECTSETUP.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: PROJECT-SETUP.elf secondary-outputs
+main-build: PROJECTSETUP.elf secondary-outputs
 
 # Tool invocations
-PROJECT-SETUP.elf PROJECT-SETUP.map: $(OBJS) $(USER_OBJS) C:\Users\Snadil\ Azad\OneDrive\Desktop\STM32_PROJECT\PROJECTSETUP\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "PROJECT-SETUP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Snadil Azad\OneDrive\Desktop\STM32_PROJECT\PROJECTSETUP\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PROJECT-SETUP.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+PROJECTSETUP.elf PROJECTSETUP.map: $(OBJS) $(USER_OBJS) /Users/sandilazad/Desktop/STM32/PROJECTSETUP/STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "PROJECTSETUP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/Users/sandilazad/Desktop/STM32/PROJECTSETUP/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PROJECTSETUP.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-PROJECT-SETUP.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "PROJECT-SETUP.list"
+PROJECTSETUP.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "PROJECTSETUP.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) PROJECT-SETUP.elf PROJECT-SETUP.list PROJECT-SETUP.map default.size.stdout
+	-$(RM) PROJECTSETUP.elf PROJECTSETUP.list PROJECTSETUP.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

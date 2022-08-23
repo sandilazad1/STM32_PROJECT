@@ -1,2 +1,2 @@
 ../Peripherals/Src/rcc.c:14:6:rcc_HSE_config	4	static
-../Peripherals/Src/rcc.c:75:6:sysTrick_config	4	static
+../Peripherals/Src/rcc.c:76:6:sysTrick_config	4	static

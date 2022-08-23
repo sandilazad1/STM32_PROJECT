@@ -11,8 +11,7 @@
  * HSE Configuration Setup
  */
 
-void rcc_HSE_config(void)
-	{
+void rcc_HSE_config(void) {
 	/*
 	 *  Configuration Parameter --> STM32F103 Clock Tree
 	 *  HSE is = 8Mhz
@@ -26,57 +25,64 @@ void rcc_HSE_config(void)
 	 *  APB1Prescalar  = 2 -->  36,72Mhz
 	 *  APB2Prescalar  = 1 -->  72MHz Both
 	 *  ADC_Prescalar  = 6 -->  12Mhz
-	*/
-		//PLL CONFIGUTRTION
-		RCC->CFGR &= ~(RCC_CFGR_PLLMULL);
-		RCC->CFGR |= (RCC_CFGR_PLLMULL9);
-		//USB DIVIDER
-		RCC->CFGR &= ~(RCC_CFGR_USBPRE);
-		//HSEOsilator
-		RCC->CR &= ~(RCC_CR_HSEON);
-		while((RCC->CR & RCC_CR_HSERDY)==0);
-		//HSE as PLL source
-		RCC->CFGR &= ~(RCC_CFGR_PLLSRC);
-		RCC->CFGR |= (RCC_CFGR_PLLSRC);
-		RCC->CR &= ~(RCC_CR_PLLON);
-		RCC->CR |= (RCC_CR_PLLON);
-		while((RCC->CR & RCC_CR_HSERDY)==0);
-	   //Flash pre-fetch enable and wait-state=2
-	   //0WS: 0-24MHz
-	   //1WS: 24-48MHz
-	   //2WS: 48-72MHz
-	   FLASH->ACR = FLASH_ACR_PRFTBE | FLASH_ACR_LATENCY_1;
-	   //Select PLL as main System Clock source
-	   RCC->CFGR &= ~(RCC_CFGR_SW);
-	   RCC->CFGR |= (RCC_CFGR_SW_1);
-	   while((RCC->CFGR & RCC_CFGR_SWS_1)==0);
-	   //Peripherals Clock Setup
-	   //AHB PreScalar Setup
-	   RCC->CFGR &= ~(RCC_CFGR_HPRE);
-	   RCC->CFGR |= (RCC_CFGR_HPRE_0);
-	   //Peripherals Clock Setup
-	   //APB PreScalar Setup
-	   RCC->CFGR &= ~(RCC_CFGR_PPRE1);
-	   RCC->CFGR |= (RCC_CFGR_PPRE1_2);
-	   //Peripherals Clock Setup
-	   //APB2 PreScalar Setup
-	   RCC->CFGR &= ~(RCC_CFGR_PPRE2);
-	   //Peripherals Clock Setup
-	   //ADC PreScalar Setup
-	   RCC->CFGR &= ~(RCC_CFGR_ADCPRE);
-	   RCC->CFGR |=  (RCC_CFGR_ADCPRE_1);
+	 */
+	//PLL CONFIGUTRTION
+	RCC->CFGR &= ~(RCC_CFGR_PLLMULL);
+	RCC->CFGR |= (RCC_CFGR_PLLMULL9);
+	//USB DIVIDER
+	RCC->CFGR &= ~(RCC_CFGR_USBPRE);
+	//HSEOsilator
+	RCC->CR &= ~(RCC_CR_HSEON);
+	RCC->CR |= (RCC_CR_HSEON);
+	while ((RCC->CR & RCC_CR_HSERDY) == 0)
+		;
+	//HSE as PLL source
+	RCC->CFGR &= ~(RCC_CFGR_PLLSRC);
+	RCC->CFGR |= (RCC_CFGR_PLLSRC);
+	RCC->CR &= ~(RCC_CR_PLLON);
+	RCC->CR |= (RCC_CR_PLLON);
+	while ((RCC->CR & RCC_CR_HSERDY) == 0)
+		;
+	//Flash pre-fetch enable and wait-state=2
+	//0WS: 0-24MHz
+	//1WS: 24-48MHz
+	//2WS: 48-72MHz
+	FLASH->ACR = FLASH_ACR_PRFTBE | FLASH_ACR_LATENCY_1;
+	//Select PLL as main System Clock source
+	RCC->CFGR &= ~(RCC_CFGR_SW);
+	RCC->CFGR |= (RCC_CFGR_SW_1);
+	while ((RCC->CFGR & RCC_CFGR_SWS_1) == 0)
+		;
+	//Peripherals Clock Setup
+	//AHB PreScalar Setup
+	RCC->CFGR &= ~(RCC_CFGR_HPRE);
+	RCC->CFGR |= (RCC_CFGR_HPRE_0);
+	//Peripherals Clock Setup
+	//APB PreScalar Setup
+	RCC->CFGR &= ~(RCC_CFGR_PPRE1);
+	RCC->CFGR |= (RCC_CFGR_PPRE1_2);
+	//Peripherals Clock Setup
+	//APB2 PreScalar Setup
+	RCC->CFGR &= ~(RCC_CFGR_PPRE2);
+	//Peripherals Clock Setup
+	//ADC PreScalar Setup
+	RCC->CFGR &= ~(RCC_CFGR_ADCPRE);
+	RCC->CFGR |= (RCC_CFGR_ADCPRE_1);
 
-	}
+}
 
 /**
- * Systrick Configuration Setup
+ * SystrickConfiguration Setup
  */
 
-void sysTrick_config(void)
-	{
+void sysTrick_config(void) {
+
+	SysTick->LOAD = 72000;
+	SysTick->VAL  = 0;
+	SysTick->CTRL |= SysTick_CTRL_CLKSOURCE_Msk;
+	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
 
 
 
-
-
-	}
+}

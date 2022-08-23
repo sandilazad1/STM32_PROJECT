@@ -24,5 +24,4 @@ SUBDIRS := \
 Core/Src \
 Peripherals/Src \
 Startup \
-Peripherals/Inc \
 

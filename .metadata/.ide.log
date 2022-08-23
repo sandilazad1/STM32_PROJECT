@@ -823,3 +823,45 @@
 2022-08-22 13:25:36,714 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Warning: NLS missing message: ExternalToolsPreferencePage_External_tool_project_builders_migration_2 in: org.eclipse.ui.externaltools.internal.ui.ExternalToolsUIMessages
 2022-08-22 13:25:36,716 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Warning: NLS missing message: ExternalToolsPreferencePage_Prompt_before_migrating_3 in: org.eclipse.ui.externaltools.internal.ui.ExternalToolsUIMessages
 2022-08-22 13:25:36,717 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Warning: NLS missing message: ExternalToolsPreferencePage_1 in: org.eclipse.ui.externaltools.internal.ui.ExternalToolsUIMessages
+2022-08-23 10:07:43,957 [INFO] Activator:177 - 
+
+
+2022-08-23 10:07:43,958 [INFO] Activator:178 - !SESSION log4j initialized
+2022-08-23 10:07:49,414 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-08-23 10:08:13,794 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-08-23 10:08:13,794 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-08-23 10:08:13,794 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-08-23 15:50:24,721 [INFO] Activator:177 - 
+
+
+2022-08-23 15:50:24,722 [INFO] Activator:178 - !SESSION log4j initialized
+2022-08-23 15:50:28,925 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-08-23 15:50:53,209 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-08-23 15:50:53,210 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-08-23 15:50:53,210 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-08-23 16:01:18,611 [INFO] Activator:177 - 
+
+
+2022-08-23 16:01:18,612 [INFO] Activator:178 - !SESSION log4j initialized
+2022-08-23 16:01:23,000 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-08-23 16:01:46,355 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-08-23 16:01:46,355 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-08-23 16:01:46,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-08-23 16:07:15,186 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:15,195 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:15,202 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:24,187 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:24,188 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:24,189 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:43,693 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:43,695 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:07:43,697 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:42,078 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:42,080 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:42,084 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:48,179 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:48,180 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:48,182 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:55,895 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:55,896 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
+2022-08-23 16:09:55,941 [ERROR] ConfigurationRetriever:139 - IOException on connection: sw-center.st.com
