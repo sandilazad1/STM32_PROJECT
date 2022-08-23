@@ -1,5 +1,5 @@
 
-PROJECTSETUP.elf:     file format elf32-littlearm
+PROJECT-SETUP.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00010328  2**0
                   CONTENTS, READONLY
- 12 .debug_info   000004bb  00000000  00000000  00010351  2**0
+ 12 .debug_info   000004cd  00000000  00000000  00010351  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00000246  00000000  00000000  0001080c  2**0
+ 13 .debug_abbrev 00000246  00000000  00000000  0001081e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000090  00000000  00000000  00010a58  2**3
+ 14 .debug_aranges 00000098  00000000  00000000  00010a68  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000058  00000000  00000000  00010ae8  2**3
+ 15 .debug_ranges 00000060  00000000  00000000  00010b00  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00010094  00000000  00000000  00010b40  2**0
+ 16 .debug_macro  00010094  00000000  00000000  00010b60  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00000fe8  00000000  00000000  00020bd4  2**0
+ 17 .debug_line   00001017  00000000  00000000  00020bf4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00054430  00000000  00000000  00021bbc  2**0
+ 18 .debug_str    00054454  00000000  00000000  00021c0b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  00075fec  2**0
+ 19 .comment      00000050  00000000  00000000  0007605f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000000e0  00000000  00000000  0007603c  2**2
+ 20 .debug_frame  00000100  00000000  00000000  000760b0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
