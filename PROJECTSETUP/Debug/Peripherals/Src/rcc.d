@@ -1,19 +1,19 @@
 Peripherals/Src/rcc.o: ../Peripherals/Src/rcc.c \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/rcc.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/main.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f1xx.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f103xb.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/core_cm3.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_version.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_compiler.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_gcc.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/system_stm32f1xx.h
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/rcc.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/main.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f1xx.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f103xb.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/core_cm3.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_version.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_compiler.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_gcc.h:
-/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/system_stm32f1xx.h:
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Peripherals/Inc/rcc.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/main.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/stm32f1xx.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/stm32f103xb.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/core_cm3.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_version.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_compiler.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/system_stm32f1xx.h
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Peripherals/Inc/rcc.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/main.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/stm32f1xx.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/stm32f103xb.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/core_cm3.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_version.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_compiler.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/CMSIS/Include/cmsis_gcc.h:
+C:/Users/Dell/Desktop/STM32_PROJECT/PROJECTSETUP/Core/Inc/system_stm32f1xx.h:

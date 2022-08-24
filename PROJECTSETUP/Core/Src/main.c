@@ -14,10 +14,11 @@ int main(void) {
     gpio_Config();
 
 	while (1) {
-	DelayMs(1000);
+	//DelayMs(1000);
 	printf("hello world");
+	//uart_Tx_Config("8",1);
 	gpio_On_Off();
-	DelayMs(1000);
+	//DelayMs(1000);
 	}
 	return 0;
 }
