@@ -14,3 +14,5 @@
 
 // gpio config
 void gpio_Config();
+
+void gpio_On_Off();

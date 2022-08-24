@@ -1,2 +1,4 @@
 ../Peripherals/Src/rcc.c:14:6:rcc_HSE_config	4	static
-../Peripherals/Src/rcc.c:76:6:sysTrick_config	4	static
+../Peripherals/Src/rcc.c:78:6:systick_init	4	static
+../Peripherals/Src/rcc.c:86:6:DelayMillis	4	static
+../Peripherals/Src/rcc.c:93:6:DelayMs	16	static

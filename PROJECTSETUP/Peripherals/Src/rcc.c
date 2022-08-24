@@ -75,14 +75,25 @@ void rcc_HSE_config(void) {
  * SystrickConfiguration Setup
  */
 
-void sysTrick_config(void) {
+void systick_init(void)
+{
+	SysTick->CTRL = 0;
+	SysTick->LOAD = 0x00FFFFFF;
+	SysTick->VAL = 0;
+	SysTick->CTRL |= 5;
+}
 
-	SysTick->LOAD = 72000;
-	SysTick->VAL  = 0;
-	SysTick->CTRL |= SysTick_CTRL_CLKSOURCE_Msk;
-	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;
-	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+void DelayMillis(void)
+{
+	SysTick->LOAD = 72000-1;
+	SysTick->VAL = 0;
+	while((SysTick->CTRL & 0x00010000) == 0);
+}
 
-
-
+void DelayMs(unsigned long t)
+{
+	for(;t>0;t--)
+		{
+			DelayMillis();
+		}
 }

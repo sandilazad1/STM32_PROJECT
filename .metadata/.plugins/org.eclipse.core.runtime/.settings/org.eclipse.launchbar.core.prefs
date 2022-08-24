@@ -5,6 +5,6 @@ configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT-SETUP,or
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT-SETUP/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT-SETUP/activeLaunchTarget=null\:---
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECTSETUP/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECTSETUP/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Spi_Com/activeLaunchTarget=null\:---
 org.eclipse.launchbar.core.descriptorType.default\:Spi_Com\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,18 @@
+#include "main.h"
+#include "rcc.h"
+#include "gpio.h"
+
+int main(void) {
+	// ConfigHSE at 72Mhz
+	rcc_HSE_config();
+	sysTrick_config(72000);
+	// ConfigGpioA
+	gpio_Config();
+
+	while (1) {
+
+		rcc_msDelay(10000);
+		gpio_LED_toggle();
+		rcc_msDelay(10000);
+	}
+}

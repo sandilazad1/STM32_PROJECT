@@ -1,0 +1,26 @@
+#include "main.h"
+#include "rcc.h"
+#include "gpio.h"
+
+int i = 0;
+
+int main(void) {
+
+	// ConfigHSE at 72Mhz
+	rcc_HSE_config();
+	//systick-at 72Mhz
+	systick_init();
+    gpio_Config();
+
+	while (1) {
+
+	DelayMs(1000);
+	void gpio_On_Off();
+	i = 2;
+	DelayMs(1000);
+	void gpio_On_Off();
+    i = 5;
+
+
+	}
+}

@@ -1,1 +1,2 @@
-../Peripherals/Src/gpio.c:13:6:gpio_Config	4	static
+../Peripherals/Src/gpio.c:12:6:gpio_Config	4	static
+../Peripherals/Src/gpio.c:22:6:gpio_On_Off	4	static

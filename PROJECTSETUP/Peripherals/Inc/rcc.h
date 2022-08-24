@@ -20,6 +20,9 @@ void rcc_HSE_config(void);
  * SystrickConfiguration Setup
  */
 
-void sysTrick_config(void);
+void systick_init(void);
+
+void DelayMs(unsigned long);
+
 
 #endif /* INC_RCC_H_ */
