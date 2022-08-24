@@ -8,7 +8,8 @@ Core/Src/main.o: ../Core/Src/main.c \
  /Users/sandilazad/Desktop/STM32/PROJECTSETUP/CMSIS/Include/cmsis_gcc.h \
  /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/system_stm32f1xx.h \
  /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/rcc.h \
- /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/gpio.h
+ /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/gpio.h \
+ /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/uart.h
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/main.h:
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f1xx.h:
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/stm32f103xb.h:
@@ -19,3 +20,4 @@ Core/Src/main.o: ../Core/Src/main.c \
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Core/Inc/system_stm32f1xx.h:
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/rcc.h:
 /Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/gpio.h:
+/Users/sandilazad/Desktop/STM32/PROJECTSETUP/Peripherals/Inc/uart.h:

@@ -1,10 +1,10 @@
-13:21:17 **** Incremental Build of configuration Debug for project PROJECTSETUP ****
+17:20:16 **** Incremental Build of configuration Debug for project PROJECTSETUP ****
 make -j3 all 
 arm-none-eabi-size   PROJECTSETUP.elf 
    text	   data	    bss	    dec	    hex	filename
-   1076	      8	   1568	   2652	    a5c	PROJECTSETUP.elf
+  15952	    472	   1584	  18008	   4658	PROJECTSETUP.elf
 Finished building: default.size.stdout
  
 
-13:21:17 Build Finished. 0 errors, 0 warnings. (took 96ms)
+17:20:16 Build Finished. 0 errors, 0 warnings. (took 97ms)
 

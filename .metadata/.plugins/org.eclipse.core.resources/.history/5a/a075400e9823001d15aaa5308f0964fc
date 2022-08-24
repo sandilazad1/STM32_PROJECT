@@ -1,0 +1,42 @@
+/*
+ * uart.c
+ *
+ *  Created on: 24 Aug 2022
+ *      Author: sandilazad
+ */
+
+#include "uart.h"
+
+/**
+ *  @ brief UASRT & GPIO CONFIG
+ */
+
+void uart_Uart1_GpioA_Config(){
+	// Enable port clock
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+	// Mode AF and Fast
+	RCC->APB2ENR |= RCC_APB2ENR_AFIOEN;
+	// Output Feq-set
+	GPIOA->CRH &=~(GPIO_CRH_MODE9);
+	GPIOA->CRH |= GPIO_CRH_MODE9_0;
+	GPIOA->CRH &=~ GPIO_CRH_CNF9;
+	GPIOA->CRH |=  GPIO_CRH_CNF9_1;
+
+	GPIOA->CRH &=~(GPIO_CRH_MODE10);
+	GPIOA->CRH &=~(GPIO_CRH_CNF10);
+	GPIOA->CRH |= GPIO_CRH_CNF10_0;
+	// Map to PA09-TX PA10-RX
+	AFIO->MAPR &=~(AFIO_MAPR_USART1_REMAP);
+};
+
+/**
+ *  @brief UASRT CONFIG
+ */
+
+void uart_Uart1_Config();
+
+/**
+ *  @brief UASRT TX CONFIG
+ */
+
+void uart_Tx_Config();

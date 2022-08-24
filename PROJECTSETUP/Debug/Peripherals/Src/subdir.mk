@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Peripherals/Src/gpio.c \
-../Peripherals/Src/rcc.c 
+../Peripherals/Src/rcc.c \
+../Peripherals/Src/uart.c 
 
 OBJS += \
 ./Peripherals/Src/gpio.o \
-./Peripherals/Src/rcc.o 
+./Peripherals/Src/rcc.o \
+./Peripherals/Src/uart.o 
 
 C_DEPS += \
 ./Peripherals/Src/gpio.d \
-./Peripherals/Src/rcc.d 
+./Peripherals/Src/rcc.d \
+./Peripherals/Src/uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Peripherals/Src/%.o Peripherals/Src/%.su: ../Peripherals/Src/%.c Peripherals/Src
 clean: clean-Peripherals-2f-Src
 
 clean-Peripherals-2f-Src:
-	-$(RM) ./Peripherals/Src/gpio.d ./Peripherals/Src/gpio.o ./Peripherals/Src/gpio.su ./Peripherals/Src/rcc.d ./Peripherals/Src/rcc.o ./Peripherals/Src/rcc.su
+	-$(RM) ./Peripherals/Src/gpio.d ./Peripherals/Src/gpio.o ./Peripherals/Src/gpio.su ./Peripherals/Src/rcc.d ./Peripherals/Src/rcc.o ./Peripherals/Src/rcc.su ./Peripherals/Src/uart.d ./Peripherals/Src/uart.o ./Peripherals/Src/uart.su
 
 .PHONY: clean-Peripherals-2f-Src
 
